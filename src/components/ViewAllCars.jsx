@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import NavCars from "./NavCars";
 
 
 const ViewAllCars = () => {
@@ -21,7 +22,7 @@ const ViewAllCars = () => {
        
     return (
         <div>
-          
+          <NavCars />
             <div className="container mt-4">
                 <div className="row g-4">
                     {data.map(
